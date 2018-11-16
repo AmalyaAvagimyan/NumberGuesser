@@ -9,7 +9,6 @@ namespace NumberGuess
     class Program
     {
 
-        // Run the program Cntrl+ f5
         static void Main(string[] args)
         {
             getAppInfo(); //show the app info
@@ -20,7 +19,6 @@ namespace NumberGuess
             {
 
                 // create a new random object
-
                 Random random = new Random();
 
                 int correctNumber = random.Next(1, 10);
@@ -36,7 +34,6 @@ namespace NumberGuess
                     string input = Console.ReadLine();
 
                     //check if input is a number 
-
                     if (!int.TryParse(input, out guess))
                     {
                         //show error message
@@ -53,8 +50,6 @@ namespace NumberGuess
                         printColorMessage(ConsoleColor.Red, "Wrong number, please try again...");
 
                     }
-
-
                 }
 
                //print success message
@@ -78,7 +73,6 @@ namespace NumberGuess
                 {
                     return;
                 }
-
                 
                // Console.Read();
             }
